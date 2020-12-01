@@ -2,7 +2,7 @@
 Display Current Accuracy in Game | Mod for A Dance Of Fire and Ice | **Requires UnityModManager**
 
 <p align="center">
-  <img src="https://i.imgur.com/t2Uz3JI.png">
+  <img src="https://i.imgur.com/UgW4vFg.png">
 </p>
 
 ## Installation
@@ -14,8 +14,10 @@ Display Current Accuracy in Game | Mod for A Dance Of Fire and Ice | **Requires 
 3. Inside the UnityModManager folder, open UnityModManagerConfig.xml
 4. At the bottom of the file **above the \</Config>**, add this:
 
+**Non-Beta as of Dec. 1 2020:**
+
 ```xml
-	<GameInfo Name="A Dance of Fire and Ice">
+<GameInfo Name="A Dance of Fire and Ice">
 		<Folder>ADOFAI</Folder>
 		<ModsDirectory>Mods</ModsDirectory>
 		<ModInfo>Info.json</ModInfo>
@@ -23,7 +25,21 @@ Display Current Accuracy in Game | Mod for A Dance Of Fire and Ice | **Requires 
 		<EntryPoint>[UnityEngine.UIModule.dll]UnityEngine.Canvas.cctor:Before</EntryPoint>
 		<StartingPoint>[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo:Before</StartingPoint>
 		<UIStartingPoint>[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo:After</UIStartingPoint>
-	</GameInfo>
+</GameInfo>
+```
+
+**Beta Version:**
+
+```xml
+<GameInfo Name="A Dance of Fire and Ice">
+		<Folder>ADOFAI</Folder>
+		<ModsDirectory>Mods</ModsDirectory>
+		<ModInfo>Info.json</ModInfo>
+		<GameExe>A Dance of Fire and Ice.exe</GameExe>
+		<EntryPoint>[UnityEngine.UIModule.dll]UnityEngine.Canvas.cctor:Before</EntryPoint>
+		<StartingPoint>[Assembly-CSharp.dll]ADOStartup.Startup:Before</StartingPoint>
+		<UIStartingPoint>[Assembly-CSharp.dll]ADOStartup.Startup:After</UIStartingPoint>
+</GameInfo>
 ```
 5. Open UnityModManager.exe
 6. In the Game Dropdown, select A Dance of Fire and Ice
