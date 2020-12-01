@@ -30,7 +30,7 @@ Display Current Accuracy in Game | Mod for A Dance Of Fire and Ice | **Requires 
 7. **Select Assembly instead of DoorstopProxy for Installation Method**
 8. Click Install
 9. Go to Mods tab
-10. Drag and Drop the ADOAccuracy.zip from [Releases]() into the area that says "Drop Zip Files Here"
+10. Drag and Drop the ADOAccuracy.zip from [Releases](https://github.com/M4cs/ADOAccuracy/releases) into the area that says "Drop Zip Files Here"
 11. Launch the Game and Press Ctrl + 8 to open the Settings Menu!
 
 ## Usage
