@@ -7,6 +7,8 @@ Display Score, Accuracy, and Percentage Complete | **Requires UnityModManager**
 
 ## Installation
 
+## Video Tutorial https://youtu.be/zBbKLVHvWKI
+
 ### First you need UnityModManager UPDATE IT as the game was added Dec. 1st 2020
 
 1. Download the newest UnityModManager [Here](https://www.nexusmods.com/site/mods/21) (Click on Mirrors)
