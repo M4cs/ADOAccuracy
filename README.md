@@ -1,5 +1,5 @@
 # ADOAccuracy
-Display Current Accuracy in Game | Mod for A Dance Of Fire and Ice | **Requires UnityModManager**
+Display Score, Accuracy, and Percentage Complete | **Requires UnityModManager**
 
 <p align="center">
   <img src="https://i.imgur.com/UgW4vFg.png">
@@ -7,48 +7,30 @@ Display Current Accuracy in Game | Mod for A Dance Of Fire and Ice | **Requires 
 
 ## Installation
 
-### First you need UnityModManager, if you already have it, skip to step 3 below!
+### First you need UnityModManager UPDATE IT as the game was added Dec. 1st 2020
 
-1. Download UnityModManager [Here](https://www.nexusmods.com/site/mods/21) (Click on Mirrors)
+1. Download the newest UnityModManager [Here](https://www.nexusmods.com/site/mods/21) (Click on Mirrors)
 2. Unzip UnityModManager anywhere on your desktop
-3. Inside the UnityModManager folder, open UnityModManagerConfig.xml
-4. At the bottom of the file **above the \</Config>**, add this:
-
-**Non-Beta as of Dec. 1 2020:**
-
-```xml
-<GameInfo Name="A Dance of Fire and Ice">
-		<Folder>ADOFAI</Folder>
-		<ModsDirectory>Mods</ModsDirectory>
-		<ModInfo>Info.json</ModInfo>
-		<GameExe>A Dance of Fire and Ice.exe</GameExe>
-		<EntryPoint>[UnityEngine.UIModule.dll]UnityEngine.Canvas.cctor:Before</EntryPoint>
-		<StartingPoint>[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo:Before</StartingPoint>
-		<UIStartingPoint>[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo:After</UIStartingPoint>
-</GameInfo>
-```
-
-**Beta Version:**
-
-```xml
-<GameInfo Name="A Dance of Fire and Ice">
-		<Folder>ADOFAI</Folder>
-		<ModsDirectory>Mods</ModsDirectory>
-		<ModInfo>Info.json</ModInfo>
-		<GameExe>A Dance of Fire and Ice.exe</GameExe>
-		<EntryPoint>[UnityEngine.UIModule.dll]UnityEngine.Canvas.cctor:Before</EntryPoint>
-		<StartingPoint>[Assembly-CSharp.dll]ADOStartup.Startup:Before</StartingPoint>
-		<UIStartingPoint>[Assembly-CSharp.dll]ADOStartup.Startup:After</UIStartingPoint>
-</GameInfo>
-```
-5. Open UnityModManager.exe
-6. In the Game Dropdown, select A Dance of Fire and Ice
-7. **Select Assembly instead of DoorstopProxy for Installation Method**
-8. Click Install
-9. Go to Mods tab
-10. Drag and Drop the ADOAccuracy.zip from [Releases](https://github.com/M4cs/ADOAccuracy/releases) into the area that says "Drop Zip Files Here"
-11. Launch the Game and Press Ctrl + 8 to open the Settings Menu!
+3. **If you are on the BETA, as of Dec. 1st 2020, you will need to modify your UnityModManagerConfig.xml file inside the folder of UnityModManager!**
+  - First, search for `[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo` in the file. **If this does not show up, you don't need to change anything!**
+  - Replace all occurances of that line with this line: `[Assembly-CSharp.dll]ADOStartup.Startup`.
+4. Open UnityModManager.exe
+5. Under the **Install Tab**, in the **Game Dropdown**, select A Dance of Fire and Ice.
+6. Click button next to the **Folder** label. Here you will select the game installation path. Should be something like `steamapps/common/A Dance of Fire and Ice`.
+7. Select **Assembly** for the installation method.
+8. Press **Install**.
+9. Click on the **Mods** tab.
+9. Drag the `ADOAccuracy-x.x.x.zip` file you can download from [Releases here](https://github.com/M4cs/ADOAccuracy/releases) onto the area that says **Drop zip files here**.
+10. Launch the game!
 
 ## Usage
 
-The mod will automatically be displayed when you start a level. You can start a level, press Escape and then Left Control + 8 to open the Settings menu in order to move it around.
+Open a level and the text will display.
+
+**It's easiest to press escape at the start of the level to edit your settings.**
+
+**Press CTRL + 8 to open the settings menu**
+
+**You can press CTRL + 7 to hide the ADOAccuracy text at anytime.**
+
+### THE TEXT DOES NOT DISPLAY IF YOU ARE NOT INSIDE OF A LEVEL
