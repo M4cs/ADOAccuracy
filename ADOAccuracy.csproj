@@ -71,6 +71,10 @@
       <HintPath>D:\Games\steamapps\common\A Dance of Fire and Ice\A Dance of Fire and Ice_Data\Managed\UnityEngine.InputModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\Games\steamapps\common\A Dance of Fire and Ice\A Dance of Fire and Ice_Data\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.TextCoreModule">
       <HintPath>D:\Games\steamapps\common\A Dance of Fire and Ice\A Dance of Fire and Ice_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
       <Private>False</Private>
@@ -94,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
+    <Compile Include="Patches\scrMistakesManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatsMenu.cs" />
   </ItemGroup>
