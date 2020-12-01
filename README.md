@@ -1,9 +1,9 @@
 # ADOAccuracy
 Display Score, Accuracy, and Percentage Complete | **Requires UnityModManager**
 
-<p align="center">
-  <img src="https://i.imgur.com/UgW4vFg.png">
-</p>
+<p align="left"><img src="https://i.imgur.com/UgW4vFg.png" width="624" height="351"></p><p align="right"><img src="https://media.discordapp.net/attachments/583339735645421568/783433051023474708/unknown.png?width=1248&height=702" width="624" height="351"></p>
+
+<p align="center"><b>Preview</b></p>
 
 ## Installation
 
