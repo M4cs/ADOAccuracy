@@ -34,3 +34,13 @@ Open a level and the text will display.
 **You can press CTRL + 7 to hide the ADOAccuracy text at anytime.**
 
 ### THE TEXT DOES NOT DISPLAY IF YOU ARE NOT INSIDE OF A LEVEL
+
+## Troubleshooting
+
+Having issues? Read below to see how you can figure out a fix.
+
+**First, press CTRL+F10 to open the ModManager screen. Click on the Logs tab and then Open Detailed Logs at the bottom.**
+
+1) Inside of the file that opens, does it say somewhere `[ERROR] Method 'SetupLevelEventsInfo' not found`? You are on the beta and you need to follow the steps above again.
+
+2) Does it not say that? Copy and paste the text inside the file and upload to https://psty.io. Send me the log on Discord @ macs#0420
