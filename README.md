@@ -15,9 +15,7 @@ Display Score, Accuracy, and Percentage Complete | **Requires UnityModManager**
 
 1. Download the newest UnityModManager [Here](https://www.nexusmods.com/site/mods/21) (Click on Mirrors)
 2. Unzip UnityModManager anywhere on your desktop
-3. **If you are on the BETA, as of Dec. 1st 2020, you will need to modify your UnityModManagerConfig.xml file inside the folder of UnityModManager!**
-  - First, search for `[Assembly-CSharp.dll]ADOBase.SetupLevelEventsInfo` in the file. **If this does not show up, you don't need to change anything!**
-  - Replace all occurances of that line with this line: `[Assembly-CSharp.dll]ADOStartup.Startup`.
+3. Make sure your game is on the Beta branch on Steam.
 4. Open UnityModManager.exe
 5. Under the **Install Tab**, in the **Game Dropdown**, select A Dance of Fire and Ice.
 6. Click button next to the **Folder** label. Here you will select the game installation path. Should be something like `steamapps/common/A Dance of Fire and Ice`.
